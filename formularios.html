@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <nav>
+        <a href="tablas.html">Tablas</a><br>
+        <a href="tablasformulario.html">TablasFormularios</a><br>
+    </nav>
+    <h1 align="center">Formularios</h1>
+    <hr>
+    <h3>Formulario estructurado</h3><br>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label>Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" required maxlength="10"><br>
+
+            <label>Apellido</label><br>
+            <input type="text" id="apellido" name="apellido" required maxlength="10"><br>
+
+            <label>DNI</label><br>
+            <input type="number" id="DNI" name="DNI" maxlength="10">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de conexión</legend>
+            <label>Nombre de Usuario</label><br>
+            <input type="text" id="usuario" name="usuario" required><br>
+
+            <label>Contraseña</label><br>
+            <input type="password" id="password" name="password" required maxlength="30"><br>
+
+            <label>Repite la Contraseña</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required maxlength="30"><br>
+        </fieldset>
+    </form><br><br>
+    <hr><br><br>
+    <form action="">
+        <fieldset>
+            <legend>MIS DATOS:</legend>
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="20"
+                placeholder="Escriba aquí su nombre"><br>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ejemplo@dominio.com"><br>
+
+            <label>Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="ej. +34984530203">
+        </fieldset>
+        <fieldset>
+            <legend>Dirección</legend>
+            <label>Dirección</label>
+            <textarea style="resize: none;" name="dirección" rows="5" cols="10" id=""></textarea><br>
+            <label>Código postal:</label>
+            <input type="text" name="codigo postal" placeholder="CP" maxlength="8"><br>
+            <label>Ciudad:</label>
+            <input type="text" name="ciudad" placeholder="Ciudad" maxlength="8">
+        </fieldset>
+        <fieldset>
+            <legend>Forma de pago</legend>
+          <ol>
+           <li><fieldset>
+               <legend>Tarjetas de Crédito</legend>
+                <ul>
+                    <li><input type="radio" name="tarjeta">
+                         <label>VISA</label>
+                    </li>
+                    <li><input type="radio" name="tarjeta">
+                        <label>American Express</label></li>
+                    <li> <input type="radio" name="tarjeta">
+                        <label> Mastercard </label></li>
+                </ul>
+            </fieldset></li>
+            
+                <li><label>Número de tarjeta</label>
+                    <input type="number" name="Numerotarjeta" placeholder="número tarjeta">
+                </li>
+                <li><label>Código seguridad</label>
+                    <input type="number" name="codigoseguridad" placeholder="Código seguridad">
+                </li>
+                <li><label>Nombre tarjeta</label>
+                    <input type="text" name="nombretarjeta" placeholder="Nombre exacto tarjeta">
+                </li>
+            </ol>
+        </fieldset>
+        <button type="submit">Comprar</button>
+    </form>
+</body>
+</html>
